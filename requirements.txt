@@ -31,3 +31,5 @@ tqdm>=4.66.5
 
 # Optional (recommended)
 seaborn>=0.13.2
+
+streamlit-lottie
