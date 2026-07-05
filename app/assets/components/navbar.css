@@ -1,0 +1,423 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   NAVBAR COMPONENT
+   navbar.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   NAVBAR
+==========================================================*/
+
+.navbar{
+
+    width:100%;
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    position:sticky;
+
+    top:15px;
+
+    z-index:999;
+
+    backdrop-filter:blur(18px);
+
+}
+
+
+/* ==========================================================
+   LEFT
+==========================================================*/
+
+.navbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+/* ==========================================================
+   RIGHT
+==========================================================*/
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+/* ==========================================================
+   LOGO
+==========================================================*/
+
+.nav-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.nav-logo img{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+.nav-logo h2{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================================
+   MENU
+==========================================================*/
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+/* ==========================================================
+   MENU ITEM
+==========================================================*/
+
+.nav-item{
+
+    text-decoration:none;
+
+    color:#475569;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.nav-item:hover{
+
+    color:#2563EB;
+
+}
+
+
+/* ==========================================================
+   ACTIVE
+==========================================================*/
+
+.nav-active{
+
+    color:#2563EB;
+
+}
+
+.nav-active::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:100%;
+
+    height:3px;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+}
+
+
+/* ==========================================================
+   SEARCH
+==========================================================*/
+
+.nav-search{
+
+    width:260px;
+
+}
+
+.nav-search input{
+
+    width:100%;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    border:1px solid #CBD5E1;
+
+}
+
+
+/* ==========================================================
+   ICON BUTTON
+==========================================================*/
+
+.nav-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.nav-icon:hover{
+
+    background:#F1F5F9;
+
+}
+
+
+/* ==========================================================
+   NOTIFICATION
+==========================================================*/
+
+.notification{
+
+    position:relative;
+
+}
+
+.notification-badge{
+
+    position:absolute;
+
+    top:-4px;
+
+    right:-4px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#EF4444;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:10px;
+
+}
+
+
+/* ==========================================================
+   PROFILE
+==========================================================*/
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.profile img{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+}
+
+.profile-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.profile-name{
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.profile-role{
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+
+/* ==========================================================
+   DATE TIME
+==========================================================*/
+
+.datetime{
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+
+/* ==========================================================
+   BREADCRUMB
+==========================================================*/
+
+.breadcrumb{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#64748B;
+
+}
+
+.breadcrumb a{
+
+    text-decoration:none;
+
+    color:#2563EB;
+
+}
+
+
+/* ==========================================================
+   THEME BUTTON
+==========================================================*/
+
+.theme-toggle{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.theme-toggle:hover{
+
+    transform:rotate(20deg);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.nav-search{
+
+display:none;
+
+}
+
+.nav-menu{
+
+display:none;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:15px;
+
+height:auto;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.navbar-left,
+.navbar-right{
+
+width:100%;
+
+justify-content:space-between;
+
+}
+
+.profile-info{
+
+display:none;
+
+}
+
+}

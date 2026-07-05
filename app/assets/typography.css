@@ -1,0 +1,594 @@
+/* ============================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   typography.css
+   ------------------------------------------------------------
+   Purpose : Typography System
+   Version : 2.0
+============================================================ */
+
+
+/* ============================================================
+   GOOGLE FONT
+============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* ============================================================
+   TYPOGRAPHY VARIABLES
+============================================================ */
+
+:root{
+
+    --font-family:'Inter',sans-serif;
+
+    --font-xs:12px;
+    --font-sm:14px;
+    --font-md:16px;
+    --font-lg:18px;
+    --font-xl:22px;
+    --font-2xl:28px;
+    --font-3xl:36px;
+    --font-4xl:48px;
+
+}
+
+
+/* ============================================================
+   BODY
+============================================================ */
+
+body{
+
+    font-family:var(--font-family);
+
+    font-size:var(--font-md);
+
+    color:var(--text-body);
+
+    line-height:1.7;
+
+}
+
+
+/* ============================================================
+   STREAMLIT DEFAULT TEXT
+============================================================ */
+
+.stMarkdown,
+.stText,
+.stCaption{
+
+    color:var(--text-body);
+
+}
+
+
+/* ============================================================
+   HERO TITLE
+============================================================ */
+
+.hero-title{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:var(--text-dark);
+
+    letter-spacing:-1px;
+
+    line-height:1.1;
+
+}
+
+
+/* ============================================================
+   HERO SUBTITLE
+============================================================ */
+
+.hero-subtitle{
+
+    font-size:20px;
+
+    color:var(--text-light);
+
+    font-weight:400;
+
+    margin-top:12px;
+
+    line-height:1.8;
+
+}
+
+
+/* ============================================================
+   PAGE TITLE
+============================================================ */
+
+.page-title{
+
+    font-size:36px;
+
+    font-weight:800;
+
+    color:var(--text-dark);
+
+    margin-bottom:10px;
+
+}
+
+
+/* ============================================================
+   SECTION TITLE
+============================================================ */
+
+.section-title{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--text-heading);
+
+    margin-bottom:18px;
+
+}
+
+
+/* ============================================================
+   CARD TITLE
+============================================================ */
+
+.card-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--text-heading);
+
+}
+
+
+/* ============================================================
+   SUBTITLE
+============================================================ */
+
+.subtitle{
+
+    font-size:18px;
+
+    color:var(--text-light);
+
+    font-weight:500;
+
+}
+
+
+/* ============================================================
+   PARAGRAPH
+============================================================ */
+
+.paragraph{
+
+    font-size:16px;
+
+    color:var(--text-body);
+
+    line-height:1.8;
+
+}
+
+
+/* ============================================================
+   DESCRIPTION
+============================================================ */
+
+.description{
+
+    font-size:15px;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+
+/* ============================================================
+   LABELS
+============================================================ */
+
+.label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:var(--text-heading);
+
+}
+
+
+/* ============================================================
+   SMALL TEXT
+============================================================ */
+
+.small-text{
+
+    font-size:13px;
+
+    color:var(--text-light);
+
+}
+
+
+/* ============================================================
+   METRIC VALUE
+============================================================ */
+
+.metric-value{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:var(--primary-600);
+
+}
+
+
+/* ============================================================
+   METRIC LABEL
+============================================================ */
+
+.metric-label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:var(--text-light);
+
+}
+
+
+/* ============================================================
+   BADGE TEXT
+============================================================ */
+
+.badge-text{
+
+    font-size:13px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+/* ============================================================
+   RISK TEXT
+============================================================ */
+
+.low-risk{
+
+    color:var(--success-600);
+
+    font-weight:700;
+
+}
+
+.medium-risk{
+
+    color:var(--warning-500);
+
+    font-weight:700;
+
+}
+
+.high-risk{
+
+    color:var(--danger-600);
+
+    font-weight:700;
+
+}
+
+
+/* ============================================================
+   LINKS
+============================================================ */
+
+.link{
+
+    color:var(--primary-600);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.link:hover{
+
+    color:var(--primary-700);
+
+}
+
+
+/* ============================================================
+   TEXT ALIGNMENT
+============================================================ */
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+
+/* ============================================================
+   FONT WEIGHT
+============================================================ */
+
+.fw-light{
+
+    font-weight:300;
+
+}
+
+.fw-normal{
+
+    font-weight:400;
+
+}
+
+.fw-medium{
+
+    font-weight:500;
+
+}
+
+.fw-semibold{
+
+    font-weight:600;
+
+}
+
+.fw-bold{
+
+    font-weight:700;
+
+}
+
+.fw-black{
+
+    font-weight:800;
+
+}
+
+
+/* ============================================================
+   TEXT COLORS
+============================================================ */
+
+.text-primary{
+
+    color:var(--primary-600);
+
+}
+
+.text-success{
+
+    color:var(--success-600);
+
+}
+
+.text-warning{
+
+    color:var(--warning-500);
+
+}
+
+.text-danger{
+
+    color:var(--danger-600);
+
+}
+
+.text-muted{
+
+    color:var(--text-light);
+
+}
+
+.text-white{
+
+    color:white;
+
+}
+
+
+/* ============================================================
+   STREAMLIT HEADINGS
+============================================================ */
+
+h1{
+
+    font-size:42px !important;
+
+    font-weight:800 !important;
+
+    color:var(--text-dark) !important;
+
+}
+
+h2{
+
+    font-size:32px !important;
+
+    font-weight:700 !important;
+
+    color:var(--text-heading) !important;
+
+}
+
+h3{
+
+    font-size:24px !important;
+
+    font-weight:700 !important;
+
+    color:var(--text-heading) !important;
+
+}
+
+h4{
+
+    font-size:20px !important;
+
+    font-weight:600 !important;
+
+}
+
+h5{
+
+    font-size:18px !important;
+
+    font-weight:600 !important;
+
+}
+
+h6{
+
+    font-size:16px !important;
+
+    font-weight:600 !important;
+
+}
+
+
+/* ============================================================
+   STREAMLIT PARAGRAPH
+============================================================ */
+
+p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:var(--text-body);
+
+}
+
+
+/* ============================================================
+   CAPTION
+============================================================ */
+
+.caption{
+
+    font-size:13px;
+
+    color:var(--text-light);
+
+}
+
+
+/* ============================================================
+   HIGHLIGHT
+============================================================ */
+
+.highlight{
+
+    color:var(--primary-600);
+
+    font-weight:700;
+
+}
+
+
+/* ============================================================
+   TEXT TRUNCATE
+============================================================ */
+
+.text-truncate{
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    text-overflow:ellipsis;
+
+}
+
+
+/* ============================================================
+   TEXT SHADOW
+============================================================ */
+
+.text-shadow{
+
+    text-shadow:0px 2px 8px rgba(0,0,0,.15);
+
+}
+
+
+/* ============================================================
+   LETTER SPACING
+============================================================ */
+
+.letter-spacing{
+
+    letter-spacing:1px;
+
+}
+
+.tight{
+
+    letter-spacing:-0.5px;
+
+}
+
+
+/* ============================================================
+   UPPERCASE
+============================================================ */
+
+.uppercase{
+
+    text-transform:uppercase;
+
+}
+
+.lowercase{
+
+    text-transform:lowercase;
+
+}
+
+.capitalize{
+
+    text-transform:capitalize;
+
+}

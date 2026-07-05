@@ -1,0 +1,271 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   Analytics Page Layout
+   analytics.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   ANALYTICS PAGE
+==========================================================*/
+
+.analytics-page{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+
+/* ==========================================================
+   ANALYTICS HEADER
+==========================================================*/
+
+.analytics-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   ANALYTICS BODY
+==========================================================*/
+
+.analytics-body{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   KPI SECTION
+==========================================================*/
+
+.kpi-section{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FILTER SECTION
+==========================================================*/
+
+.filter-layout{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+/* ==========================================================
+   CHART SECTION
+==========================================================*/
+
+.chart-section{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   LARGE CHART
+==========================================================*/
+
+.large-chart{
+    grid-column:span 2;
+}
+
+
+/* ==========================================================
+   FEATURE IMPORTANCE
+==========================================================*/
+
+.feature-importance-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   CORRELATION SECTION
+==========================================================*/
+
+.correlation-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   DISTRIBUTION SECTION
+==========================================================*/
+
+.distribution-layout{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   BUSINESS INSIGHTS
+==========================================================*/
+
+.business-insights{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   MODEL INSIGHTS
+==========================================================*/
+
+.model-insights{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   DATA SUMMARY
+==========================================================*/
+
+.data-summary{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FEATURE SUMMARY
+==========================================================*/
+
+.feature-summary{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+
+/* ==========================================================
+   SHAP ANALYTICS
+==========================================================*/
+
+.shap-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   ANALYTICS TABLE
+==========================================================*/
+
+.analytics-table{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   REPORT SECTION
+==========================================================*/
+
+.report-layout{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FOOTER
+==========================================================*/
+
+.analytics-footer{
+    margin-top:40px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:1200px){
+
+.kpi-section,
+.data-summary{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.chart-section,
+.feature-importance-layout,
+.correlation-layout,
+.business-insights,
+.shap-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.large-chart{
+
+grid-column:auto;
+
+}
+
+.distribution-layout{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.kpi-section,
+.data-summary,
+.distribution-layout,
+.model-insights{
+
+grid-template-columns:1fr;
+
+}
+
+.filter-layout{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+.report-layout{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+}

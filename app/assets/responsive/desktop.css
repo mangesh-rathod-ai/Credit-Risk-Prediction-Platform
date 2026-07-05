@@ -1,0 +1,494 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   DESKTOP RESPONSIVE
+   desktop.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   LARGE DESKTOP (1920px+)
+==========================================================*/
+
+@media (min-width:1920px){
+
+.dashboard-container{
+
+    max-width:1800px;
+
+    margin:auto;
+
+    padding:40px;
+
+}
+
+.hero-title{
+
+    font-size:68px;
+
+}
+
+.hero-subtitle{
+
+    font-size:24px;
+
+}
+
+.dashboard-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.analytics-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.chart-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.metric-card{
+
+    min-height:180px;
+
+}
+
+.card{
+
+    padding:32px;
+
+}
+
+.chart-container{
+
+    min-height:500px;
+
+}
+
+}
+
+
+/* ==========================================================
+   STANDARD DESKTOP
+==========================================================*/
+
+@media (min-width:1600px) and (max-width:1919px){
+
+.dashboard-container{
+
+    max-width:1600px;
+
+    margin:auto;
+
+    padding:32px;
+
+}
+
+.hero-title{
+
+    font-size:60px;
+
+}
+
+.dashboard-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.analytics-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.chart-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.metric-card{
+
+    min-height:165px;
+
+}
+
+}
+
+
+/* ==========================================================
+   LAPTOP DESKTOP
+==========================================================*/
+
+@media (min-width:1400px) and (max-width:1599px){
+
+.dashboard-container{
+
+    padding:28px;
+
+}
+
+.hero-title{
+
+    font-size:54px;
+
+}
+
+.dashboard-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.analytics-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.chart-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ==========================================================
+   NORMAL DESKTOP
+==========================================================*/
+
+@media (min-width:1200px) and (max-width:1399px){
+
+.dashboard-container{
+
+    padding:24px;
+
+}
+
+.hero-title{
+
+    font-size:48px;
+
+}
+
+.dashboard-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.analytics-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.chart-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ==========================================================
+   SIDEBAR
+==========================================================*/
+
+@media (min-width:1200px){
+
+.sidebar{
+
+    width:280px;
+
+}
+
+.sidebar-item{
+
+    padding:16px 18px;
+
+    font-size:15px;
+
+}
+
+}
+
+
+/* ==========================================================
+   NAVBAR
+==========================================================*/
+
+@media (min-width:1200px){
+
+.navbar{
+
+    height:80px;
+
+}
+
+.nav-logo{
+
+    font-size:28px;
+
+}
+
+}
+
+
+/* ==========================================================
+   HERO SECTION
+==========================================================*/
+
+@media (min-width:1200px){
+
+.hero{
+
+    padding:50px;
+
+}
+
+.hero-card{
+
+    min-height:340px;
+
+}
+
+}
+
+
+/* ==========================================================
+   METRIC CARDS
+==========================================================*/
+
+@media (min-width:1200px){
+
+.metric-card{
+
+    padding:28px;
+
+}
+
+.metric-value{
+
+    font-size:42px;
+
+}
+
+.metric-title{
+
+    font-size:18px;
+
+}
+
+}
+
+
+/* ==========================================================
+   CHARTS
+==========================================================*/
+
+@media (min-width:1200px){
+
+.chart-container{
+
+    padding:28px;
+
+}
+
+.chart-title{
+
+    font-size:22px;
+
+}
+
+}
+
+
+/* ==========================================================
+   TABLES
+==========================================================*/
+
+@media (min-width:1200px){
+
+.table{
+
+    font-size:15px;
+
+}
+
+.table th{
+
+    padding:18px;
+
+}
+
+.table td{
+
+    padding:18px;
+
+}
+
+}
+
+
+/* ==========================================================
+   FORMS
+==========================================================*/
+
+@media (min-width:1200px){
+
+.form-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.prediction-form{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+==========================================================*/
+
+@media (min-width:1200px){
+
+.btn{
+
+    padding:14px 28px;
+
+    font-size:16px;
+
+}
+
+}
+
+
+/* ==========================================================
+   FOOTER
+==========================================================*/
+
+@media (min-width:1200px){
+
+.footer-grid{
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+}
+
+}
+
+
+/* ==========================================================
+   MODALS
+==========================================================*/
+
+@media (min-width:1200px){
+
+.modal{
+
+    max-width:950px;
+
+}
+
+.modal-lg{
+
+    max-width:1200px;
+
+}
+
+}
+
+
+/* ==========================================================
+   HOVER EFFECTS
+==========================================================*/
+
+@media (min-width:1200px){
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.chart-container:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.metric-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+}
+
+
+/* ==========================================================
+   ULTRA WIDE MONITORS (2560px+)
+==========================================================*/
+
+@media (min-width:2560px){
+
+.dashboard-container{
+
+    max-width:2200px;
+
+}
+
+.hero-title{
+
+    font-size:76px;
+
+}
+
+.dashboard-grid{
+
+    grid-template-columns:repeat(5,1fr);
+
+}
+
+.analytics-grid{
+
+    grid-template-columns:repeat(5,1fr);
+
+}
+
+.chart-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.card{
+
+    padding:36px;
+
+}
+
+.metric-value{
+
+    font-size:52px;
+
+}
+
+}

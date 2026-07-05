@@ -1,0 +1,363 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   prediction.css
+   ----------------------------------------------------------
+   Prediction Page Layout
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   PREDICTION PAGE WRAPPER
+==========================================================*/
+
+.prediction-page{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   PREDICTION HEADER
+==========================================================*/
+
+.prediction-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   MAIN LAYOUT
+==========================================================*/
+
+.prediction-container{
+    display:grid;
+    grid-template-columns:1.5fr .9fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   LEFT PANEL
+==========================================================*/
+
+.prediction-left{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   RIGHT PANEL
+==========================================================*/
+
+.prediction-right{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   APPLICANT SECTION
+==========================================================*/
+
+.applicant-section{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   PERSONAL INFORMATION
+==========================================================*/
+
+.personal-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FINANCIAL INFORMATION
+==========================================================*/
+
+.financial-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   CREDIT DETAILS
+==========================================================*/
+
+.credit-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   EMPLOYMENT DETAILS
+==========================================================*/
+
+.employment-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   EXTERNAL SCORE SECTION
+==========================================================*/
+
+.external-score-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FEATURE ENGINEERING
+==========================================================*/
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   PREDICT BUTTON AREA
+==========================================================*/
+
+.predict-action{
+    display:flex;
+    gap:15px;
+    justify-content:flex-end;
+    margin-top:20px;
+}
+
+
+/* ==========================================================
+   RESULT SECTION
+==========================================================*/
+
+.result-section{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   RISK SUMMARY
+==========================================================*/
+
+.risk-summary{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+
+/* ==========================================================
+   PROBABILITY AREA
+==========================================================*/
+
+.probability-layout{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+/* ==========================================================
+   ELIGIBILITY SCORE
+==========================================================*/
+
+.score-layout{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   RECOMMENDATION
+==========================================================*/
+
+.recommendation-layout{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+/* ==========================================================
+   FEATURE IMPORTANCE
+==========================================================*/
+
+.feature-importance-layout{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+/* ==========================================================
+   SHAP SECTION
+==========================================================*/
+
+.shap-layout{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   APPLICANT SUMMARY
+==========================================================*/
+
+.summary-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   HISTORY SECTION
+==========================================================*/
+
+.history-layout{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   DOWNLOAD REPORT
+==========================================================*/
+
+.download-layout{
+    display:flex;
+    justify-content:flex-end;
+}
+
+
+/* ==========================================================
+   FOOTER ACTIONS
+==========================================================*/
+
+.footer-actions{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FLOATING RESULT PANEL
+==========================================================*/
+
+.floating-result{
+    position:sticky;
+    top:20px;
+}
+
+
+/* ==========================================================
+   DASHBOARD GRID
+==========================================================*/
+
+.prediction-dashboard{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   COMPARISON SECTION
+==========================================================*/
+
+.comparison-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   TIMESTAMP AREA
+==========================================================*/
+
+.timestamp-layout{
+    display:flex;
+    justify-content:flex-end;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:1200px){
+
+.prediction-container{
+grid-template-columns:1fr;
+}
+
+.credit-grid,
+.external-score-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:768px){
+
+.personal-grid,
+.financial-grid,
+.credit-grid,
+.employment-grid,
+.external-score-grid,
+.feature-grid,
+.summary-layout,
+.prediction-dashboard,
+.comparison-layout{
+grid-template-columns:1fr;
+}
+
+.predict-action{
+flex-direction:column;
+}
+
+.footer-actions{
+flex-direction:column;
+}
+
+.prediction-header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+}

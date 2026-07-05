@@ -1,0 +1,498 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   utilities.css
+   ----------------------------------------------------------
+   Global Utility Classes
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   DISPLAY
+========================================================== */
+
+.d-none{display:none!important;}
+.d-block{display:block!important;}
+.d-inline{display:inline!important;}
+.d-inline-block{display:inline-block!important;}
+.d-flex{display:flex!important;}
+.d-grid{display:grid!important;}
+
+
+/* ==========================================================
+   FLEX DIRECTION
+========================================================== */
+
+.flex-row{flex-direction:row!important;}
+.flex-column{flex-direction:column!important;}
+.flex-wrap{flex-wrap:wrap!important;}
+.flex-nowrap{flex-wrap:nowrap!important;}
+
+
+/* ==========================================================
+   JUSTIFY CONTENT
+========================================================== */
+
+.justify-start{justify-content:flex-start!important;}
+.justify-center{justify-content:center!important;}
+.justify-end{justify-content:flex-end!important;}
+.justify-between{justify-content:space-between!important;}
+.justify-around{justify-content:space-around!important;}
+.justify-evenly{justify-content:space-evenly!important;}
+
+
+/* ==========================================================
+   ALIGN ITEMS
+========================================================== */
+
+.align-start{align-items:flex-start!important;}
+.align-center{align-items:center!important;}
+.align-end{align-items:flex-end!important;}
+.align-stretch{align-items:stretch!important;}
+
+
+/* ==========================================================
+   FLEX HELPERS
+========================================================== */
+
+.flex-1{flex:1;}
+.flex-auto{flex:auto;}
+.flex-grow{flex-grow:1;}
+.flex-shrink{flex-shrink:1;}
+
+
+/* ==========================================================
+   WIDTH
+========================================================== */
+
+.w-25{width:25%!important;}
+.w-50{width:50%!important;}
+.w-75{width:75%!important;}
+.w-100{width:100%!important;}
+
+.max-w-100{
+    max-width:100%;
+}
+
+
+/* ==========================================================
+   HEIGHT
+========================================================== */
+
+.h-25{height:25%!important;}
+.h-50{height:50%!important;}
+.h-75{height:75%!important;}
+.h-100{height:100%!important;}
+
+.min-h-screen{
+    min-height:100vh;
+}
+
+
+/* ==========================================================
+   OVERFLOW
+========================================================== */
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+.overflow-auto{
+    overflow:auto;
+}
+
+.overflow-scroll{
+    overflow:scroll;
+}
+
+
+/* ==========================================================
+   POSITION
+========================================================== */
+
+.relative{
+    position:relative;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.fixed{
+    position:fixed;
+}
+
+.sticky{
+    position:sticky;
+    top:20px;
+}
+
+
+/* ==========================================================
+   BORDER RADIUS
+========================================================== */
+
+.rounded-sm{
+    border-radius:8px;
+}
+
+.rounded{
+    border-radius:12px;
+}
+
+.rounded-md{
+    border-radius:16px;
+}
+
+.rounded-lg{
+    border-radius:20px;
+}
+
+.rounded-xl{
+    border-radius:30px;
+}
+
+.rounded-full{
+    border-radius:999px;
+}
+
+
+/* ==========================================================
+   BORDER
+========================================================== */
+
+.border{
+    border:1px solid var(--border);
+}
+
+.border-light{
+    border:1px solid var(--border-light);
+}
+
+.border-primary{
+    border:1px solid var(--primary-600);
+}
+
+.border-success{
+    border:1px solid var(--success-500);
+}
+
+.border-warning{
+    border:1px solid var(--warning-500);
+}
+
+.border-danger{
+    border:1px solid var(--danger-500);
+}
+
+
+/* ==========================================================
+   SHADOW
+========================================================== */
+
+.shadow-sm{
+    box-shadow:var(--shadow-light);
+}
+
+.shadow{
+    box-shadow:var(--shadow-medium);
+}
+
+.shadow-lg{
+    box-shadow:var(--shadow-heavy);
+}
+
+.no-shadow{
+    box-shadow:none!important;
+}
+
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+.bg-white{
+    background:var(--surface);
+}
+
+.bg-primary{
+    background:var(--primary-600);
+}
+
+.bg-success{
+    background:var(--success-500);
+}
+
+.bg-warning{
+    background:var(--warning-500);
+}
+
+.bg-danger{
+    background:var(--danger-500);
+}
+
+.bg-light{
+    background:var(--background-light);
+}
+
+.bg-dark{
+    background:var(--background-dark);
+}
+
+.bg-glass{
+    background:var(--glass-bg);
+}
+
+
+/* ==========================================================
+   CURSOR
+========================================================== */
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+.cursor-default{
+    cursor:default;
+}
+
+.cursor-not-allowed{
+    cursor:not-allowed;
+}
+
+
+/* ==========================================================
+   OPACITY
+========================================================== */
+
+.opacity-0{opacity:0;}
+.opacity-25{opacity:.25;}
+.opacity-50{opacity:.5;}
+.opacity-75{opacity:.75;}
+.opacity-100{opacity:1;}
+
+
+/* ==========================================================
+   Z INDEX
+========================================================== */
+
+.z-1{z-index:1;}
+.z-10{z-index:10;}
+.z-50{z-index:50;}
+.z-100{z-index:100;}
+
+
+/* ==========================================================
+   TEXT ALIGN
+========================================================== */
+
+.text-left{
+    text-align:left;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.text-right{
+    text-align:right;
+}
+
+
+/* ==========================================================
+   FLOAT
+========================================================== */
+
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
+/* ==========================================================
+   TRANSITIONS
+========================================================== */
+
+.transition{
+    transition:.3s ease;
+}
+
+.transition-fast{
+    transition:.2s ease;
+}
+
+.transition-slow{
+    transition:.5s ease;
+}
+
+
+/* ==========================================================
+   HOVER LIFT
+========================================================== */
+
+.hover-lift{
+    transition:.3s ease;
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+/* ==========================================================
+   HOVER SCALE
+========================================================== */
+
+.hover-scale{
+
+    transition:.3s ease;
+
+}
+
+.hover-scale:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* ==========================================================
+   ROTATE
+========================================================== */
+
+.rotate-90{
+    transform:rotate(90deg);
+}
+
+.rotate-180{
+    transform:rotate(180deg);
+}
+
+
+/* ==========================================================
+   VISIBILITY
+========================================================== */
+
+.visible{
+    visibility:visible;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+
+/* ==========================================================
+   POINTER EVENTS
+========================================================== */
+
+.pointer-none{
+    pointer-events:none;
+}
+
+.pointer-auto{
+    pointer-events:auto;
+}
+
+
+/* ==========================================================
+   USER SELECT
+========================================================== */
+
+.select-none{
+    user-select:none;
+}
+
+.select-all{
+    user-select:all;
+}
+
+
+/* ==========================================================
+   OBJECT FIT
+========================================================== */
+
+.object-cover{
+    object-fit:cover;
+}
+
+.object-contain{
+    object-fit:contain;
+}
+
+
+/* ==========================================================
+   GLASS EFFECT
+========================================================== */
+
+.glass{
+
+    background:var(--glass-bg);
+
+    backdrop-filter:blur(var(--glass-blur));
+
+    border:1px solid var(--glass-border);
+
+}
+
+
+/* ==========================================================
+   CENTER CONTENT
+========================================================== */
+
+.center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* ==========================================================
+   SPACE BETWEEN
+========================================================== */
+
+.space-between{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+/* ==========================================================
+   AUTO MARGIN
+========================================================== */
+
+.mx-auto{
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.my-auto{
+
+    margin-top:auto;
+
+    margin-bottom:auto;
+
+}

@@ -1,0 +1,439 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   Base Layout System
+   layout.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   PAGE CONTAINER
+==========================================================*/
+
+.page-container{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto;
+    padding:24px;
+}
+
+
+/* ==========================================================
+   CONTENT CONTAINER
+==========================================================*/
+
+.content-container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+
+/* ==========================================================
+   SECTION CONTAINER
+==========================================================*/
+
+.section-container{
+    width:100%;
+    margin-bottom:32px;
+}
+
+
+/* ==========================================================
+   ROW
+==========================================================*/
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   COLUMN
+==========================================================*/
+
+.column{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FLEX CENTER
+==========================================================*/
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   FLEX BETWEEN
+==========================================================*/
+
+.flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   FLEX START
+==========================================================*/
+
+.flex-start{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   FLEX END
+==========================================================*/
+
+.flex-end{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   GRID AUTO
+==========================================================*/
+
+.grid-auto{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+
+/* ==========================================================
+   TWO COLUMN GRID
+==========================================================*/
+
+.grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   THREE COLUMN GRID
+==========================================================*/
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FOUR COLUMN GRID
+==========================================================*/
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FIVE COLUMN GRID
+==========================================================*/
+
+.grid-5{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   SIX COLUMN GRID
+==========================================================*/
+
+.grid-6{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   SIDEBAR LAYOUT
+==========================================================*/
+
+.sidebar-layout{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   DASHBOARD LAYOUT
+==========================================================*/
+
+.dashboard-layout{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   HERO LAYOUT
+==========================================================*/
+
+.hero-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   PREDICTION LAYOUT
+==========================================================*/
+
+.prediction-layout{
+    display:grid;
+    grid-template-columns:1.4fr .8fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   ANALYTICS LAYOUT
+==========================================================*/
+
+.analytics-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   PERFORMANCE LAYOUT
+==========================================================*/
+
+.performance-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   ABOUT LAYOUT
+==========================================================*/
+
+.about-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   DOCUMENTATION LAYOUT
+==========================================================*/
+
+.documentation-layout{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   CARD GRID
+==========================================================*/
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+
+/* ==========================================================
+   KPI GRID
+==========================================================*/
+
+.kpi-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   CHART GRID
+==========================================================*/
+
+.chart-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   FEATURE GRID
+==========================================================*/
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+
+/* ==========================================================
+   STICKY
+==========================================================*/
+
+.sticky-top{
+    position:sticky;
+    top:20px;
+}
+
+
+/* ==========================================================
+   FULL WIDTH
+==========================================================*/
+
+.full-width{
+    width:100%;
+}
+
+
+/* ==========================================================
+   HALF WIDTH
+==========================================================*/
+
+.half-width{
+    width:50%;
+}
+
+
+/* ==========================================================
+   AUTO HEIGHT
+==========================================================*/
+
+.auto-height{
+    height:auto;
+}
+
+
+/* ==========================================================
+   FULL HEIGHT
+==========================================================*/
+
+.full-height{
+    height:100%;
+}
+
+
+/* ==========================================================
+   OVERFLOW
+==========================================================*/
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+.overflow-auto{
+    overflow:auto;
+}
+
+
+/* ==========================================================
+   CENTER
+==========================================================*/
+
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:1200px){
+
+.hero-layout,
+.prediction-layout,
+.analytics-layout,
+.documentation-layout,
+.sidebar-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.kpi-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-4,
+.grid-5,
+.grid-6{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.chart-grid,
+.performance-layout,
+.about-layout,
+.kpi-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.page-container{
+
+padding:15px;
+
+}
+
+.row{
+
+flex-direction:column;
+
+}
+
+}

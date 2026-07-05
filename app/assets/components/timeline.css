@@ -1,0 +1,398 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   TIMELINE COMPONENT
+   timeline.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   TIMELINE
+==========================================================*/
+
+.timeline{
+
+    position:relative;
+
+    margin:40px 0;
+
+    padding-left:40px;
+
+}
+
+
+/* ==========================================================
+   VERTICAL LINE
+==========================================================*/
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:16px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#CBD5E1;
+
+    border-radius:20px;
+
+}
+
+
+/* ==========================================================
+   ITEM
+==========================================================*/
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:40px;
+
+}
+
+
+/* ==========================================================
+   DOT
+==========================================================*/
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-31px;
+
+    top:6px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    border:4px solid white;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.18);
+
+}
+
+
+/* ==========================================================
+   CARD
+==========================================================*/
+
+.timeline-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    transition:.35s ease;
+
+}
+
+
+/* ==========================================================
+   CARD HOVER
+==========================================================*/
+
+.timeline-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+/* ==========================================================
+   TITLE
+==========================================================*/
+
+.timeline-title{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+    color:#0F172A;
+
+}
+
+
+/* ==========================================================
+   DATE
+==========================================================*/
+
+.timeline-date{
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+==========================================================*/
+
+.timeline-description{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================================
+   ICON
+==========================================================*/
+
+.timeline-icon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* ==========================================================
+   SUCCESS
+==========================================================*/
+
+.timeline-success .timeline-dot{
+
+    background:#16A34A;
+
+}
+
+
+/* ==========================================================
+   WARNING
+==========================================================*/
+
+.timeline-warning .timeline-dot{
+
+    background:#F59E0B;
+
+}
+
+
+/* ==========================================================
+   DANGER
+==========================================================*/
+
+.timeline-danger .timeline-dot{
+
+    background:#EF4444;
+
+}
+
+
+/* ==========================================================
+   COMPLETED
+==========================================================*/
+
+.timeline-completed{
+
+    opacity:1;
+
+}
+
+
+/* ==========================================================
+   ACTIVE
+==========================================================*/
+
+.timeline-active{
+
+    transform:scale(1.02);
+
+}
+
+
+/* ==========================================================
+   PENDING
+==========================================================*/
+
+.timeline-pending{
+
+    opacity:.7;
+
+}
+
+
+/* ==========================================================
+   BADGE
+==========================================================*/
+
+.timeline-badge{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    margin-top:15px;
+
+}
+
+
+/* ==========================================================
+   HORIZONTAL TIMELINE
+==========================================================*/
+
+.timeline-horizontal{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+
+/* ==========================================================
+   STEP
+==========================================================*/
+
+.timeline-step{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+
+/* ==========================================================
+   STEP NUMBER
+==========================================================*/
+
+.timeline-number{
+
+    width:55px;
+
+    height:55px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================================================
+   CONNECTOR
+==========================================================*/
+
+.timeline-line{
+
+    height:4px;
+
+    flex:1;
+
+    background:#CBD5E1;
+
+    margin-top:26px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:768px){
+
+.timeline{
+
+padding-left:25px;
+
+}
+
+.timeline::before{
+
+left:8px;
+
+}
+
+.timeline-dot{
+
+left:-24px;
+
+}
+
+.timeline-horizontal{
+
+flex-direction:column;
+
+}
+
+.timeline-line{
+
+display:none;
+
+}
+
+}

@@ -1,0 +1,353 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   Documentation Page Layout
+   documentation.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   DOCUMENTATION PAGE
+==========================================================*/
+
+.documentation-page{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+
+/* ==========================================================
+   DOCUMENTATION HEADER
+==========================================================*/
+
+.documentation-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   DOCUMENTATION BODY
+==========================================================*/
+
+.documentation-body{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   SIDEBAR + CONTENT
+==========================================================*/
+
+.documentation-layout{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   NAVIGATION
+==========================================================*/
+
+.documentation-nav{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    position:sticky;
+    top:20px;
+}
+
+
+/* ==========================================================
+   CONTENT AREA
+==========================================================*/
+
+.documentation-content{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+
+/* ==========================================================
+   SECTION
+==========================================================*/
+
+.doc-section{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+
+/* ==========================================================
+   INTRODUCTION
+==========================================================*/
+
+.introduction-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   PROBLEM STATEMENT
+==========================================================*/
+
+.problem-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   BUSINESS OBJECTIVE
+==========================================================*/
+
+.business-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   DATASET
+==========================================================*/
+
+.dataset-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FEATURE ENGINEERING
+==========================================================*/
+
+.feature-engineering-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   MODEL PIPELINE
+==========================================================*/
+
+.pipeline-layout{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   MODEL COMPARISON
+==========================================================*/
+
+.model-comparison-layout{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   HYPERPARAMETERS
+==========================================================*/
+
+.hyperparameter-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   EVALUATION METRICS
+==========================================================*/
+
+.metrics-layout{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   CONFUSION MATRIX + ROC
+==========================================================*/
+
+.evaluation-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   FEATURE IMPORTANCE
+==========================================================*/
+
+.feature-importance-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   SHAP EXPLAINABILITY
+==========================================================*/
+
+.shap-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   PROJECT STRUCTURE
+==========================================================*/
+
+.project-structure-layout{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   TECHNOLOGY STACK
+==========================================================*/
+
+.tech-stack-layout{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FUTURE ENHANCEMENTS
+==========================================================*/
+
+.future-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   REFERENCES
+==========================================================*/
+
+.reference-layout{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+
+/* ==========================================================
+   DOWNLOAD SECTION
+==========================================================*/
+
+.download-layout{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+}
+
+
+/* ==========================================================
+   FOOTER
+==========================================================*/
+
+.documentation-footer{
+    margin-top:40px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:1200px){
+
+.documentation-layout,
+.introduction-layout,
+.problem-layout,
+.feature-importance-layout,
+.shap-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.pipeline-layout{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.metrics-layout{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.model-comparison-layout{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.business-layout,
+.dataset-layout,
+.feature-engineering-layout,
+.hyperparameter-layout,
+.evaluation-layout,
+.future-layout,
+.pipeline-layout,
+.metrics-layout,
+.model-comparison-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.documentation-header{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+.download-layout{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+}

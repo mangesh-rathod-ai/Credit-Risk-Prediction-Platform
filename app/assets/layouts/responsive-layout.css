@@ -1,0 +1,384 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   Responsive Layout
+   responsive-layout.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   LARGE DESKTOP
+   1600px and below
+==========================================================*/
+
+@media (max-width:1600px){
+
+.page-container{
+    max-width:1400px;
+}
+
+.grid-5{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.grid-6{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+
+/* ==========================================================
+   DESKTOP
+   1400px and below
+==========================================================*/
+
+@media (max-width:1400px){
+
+.kpi-grid,
+.metrics-grid,
+.model-summary-layout{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid-4{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid-5{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.grid-6{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.hero-layout{
+    grid-template-columns:1.5fr 1fr;
+}
+
+}
+
+
+/* ==========================================================
+   LAPTOP
+   1200px and below
+==========================================================*/
+
+@media (max-width:1200px){
+
+.hero-layout,
+.prediction-layout,
+.analytics-layout,
+.documentation-layout,
+.about-layout,
+.performance-layout,
+.project-summary,
+.architecture-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.chart-grid,
+.roc-pr-layout,
+.confusion-layout,
+.learning-curve-layout,
+.train-test-layout,
+.cross-validation-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.two-column,
+.two-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.grid-3{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-4{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-5{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-6{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ==========================================================
+   TABLET
+   992px and below
+==========================================================*/
+
+@media (max-width:992px){
+
+.dashboard-header,
+.performance-header,
+.analytics-header,
+.prediction-header,
+.documentation-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+
+}
+
+.feature-grid,
+.card-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.kpi-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.chart-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.sidebar-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ==========================================================
+   SMALL TABLET
+   768px and below
+==========================================================*/
+
+@media (max-width:768px){
+
+.page-container{
+
+    padding:16px;
+
+}
+
+.hero-layout{
+
+    gap:20px;
+
+}
+
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6{
+
+    grid-template-columns:1fr;
+
+}
+
+.feature-grid,
+.card-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.personal-grid,
+.financial-grid,
+.credit-grid,
+.external-score-grid,
+.summary-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.tech-stack-layout{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.filter-layout,
+.predict-action,
+.footer-actions,
+.download-layout{
+
+    flex-direction:column;
+    align-items:stretch;
+
+}
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   576px and below
+==========================================================*/
+
+@media (max-width:576px){
+
+.page-container{
+
+    padding:12px;
+
+}
+
+.dashboard-wrapper{
+
+    gap:20px;
+
+}
+
+.content-wrapper{
+
+    gap:20px;
+
+}
+
+.section-container{
+
+    margin-bottom:20px;
+
+}
+
+.hero-layout{
+
+    padding:15px;
+
+}
+
+.kpi-grid,
+.metrics-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.tech-stack-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.chart-grid{
+
+    gap:15px;
+
+}
+
+.widget-row{
+
+    flex-direction:column;
+
+}
+
+}
+
+
+/* ==========================================================
+   EXTRA SMALL MOBILE
+   400px and below
+==========================================================*/
+
+@media (max-width:400px){
+
+.page-container{
+
+    padding:10px;
+
+}
+
+.dashboard-wrapper{
+
+    gap:15px;
+
+}
+
+.content-wrapper{
+
+    gap:15px;
+
+}
+
+.hero-layout{
+
+    padding:10px;
+
+}
+
+.section-container{
+
+    margin-bottom:15px;
+
+}
+
+}
+
+
+/* ==========================================================
+   LANDSCAPE MOBILE
+==========================================================*/
+
+@media (max-height:500px){
+
+.hero-layout{
+
+    min-height:auto;
+
+}
+
+}
+
+
+/* ==========================================================
+   PRINT
+==========================================================*/
+
+@media print{
+
+.sidebar-layout{
+
+    display:block;
+
+}
+
+.dashboard-wrapper{
+
+    padding:0;
+
+}
+
+.predict-action,
+.download-layout{
+
+    display:none;
+
+}
+
+}

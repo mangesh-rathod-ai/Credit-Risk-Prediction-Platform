@@ -1,0 +1,308 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   Model Performance Layout
+   performance.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   PERFORMANCE PAGE
+==========================================================*/
+
+.performance-page{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+
+/* ==========================================================
+   PERFORMANCE HEADER
+==========================================================*/
+
+.performance-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   PERFORMANCE BODY
+==========================================================*/
+
+.performance-body{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   MODEL SUMMARY
+==========================================================*/
+
+.model-summary-layout{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   METRICS GRID
+==========================================================*/
+
+.metrics-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   ROC & PR CURVE
+==========================================================*/
+
+.roc-pr-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   CONFUSION MATRIX
+==========================================================*/
+
+.confusion-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   MODEL COMPARISON
+==========================================================*/
+
+.model-comparison-layout{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FEATURE IMPORTANCE
+==========================================================*/
+
+.feature-importance-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   SHAP ANALYSIS
+==========================================================*/
+
+.shap-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   LEARNING CURVE
+==========================================================*/
+
+.learning-curve-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   TRAIN VS TEST
+==========================================================*/
+
+.train-test-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   HYPERPARAMETERS
+==========================================================*/
+
+.hyperparameter-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   CROSS VALIDATION
+==========================================================*/
+
+.cross-validation-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   CLASSIFICATION REPORT
+==========================================================*/
+
+.classification-report-layout{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   BUSINESS METRICS
+==========================================================*/
+
+.business-metrics-layout{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   THRESHOLD ANALYSIS
+==========================================================*/
+
+.threshold-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   MODEL INSIGHTS
+==========================================================*/
+
+.model-insights-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   PERFORMANCE TABLE
+==========================================================*/
+
+.performance-table{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   DOWNLOAD REPORT
+==========================================================*/
+
+.performance-download{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+}
+
+
+/* ==========================================================
+   FOOTER
+==========================================================*/
+
+.performance-footer{
+    margin-top:40px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:1200px){
+
+.model-summary-layout,
+.metrics-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.roc-pr-layout,
+.confusion-layout,
+.feature-importance-layout,
+.shap-layout,
+.learning-curve-layout,
+.train-test-layout,
+.cross-validation-layout,
+.threshold-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.model-comparison-layout{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.business-metrics-layout{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.model-summary-layout,
+.metrics-grid,
+.model-comparison-layout,
+.business-metrics-layout,
+.model-insights-layout,
+.hyperparameter-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.performance-header{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+.performance-download{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+}

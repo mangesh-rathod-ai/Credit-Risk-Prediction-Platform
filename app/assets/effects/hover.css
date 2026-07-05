@@ -1,0 +1,643 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   HOVER EFFECTS
+   hover.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   TRANSITION
+==========================================================*/
+
+.transition{
+    transition:all .35s ease;
+}
+
+
+/* ==========================================================
+   LIFT
+==========================================================*/
+
+.hover-lift{
+    transition:all .35s ease;
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==========================================================
+   SCALE
+==========================================================*/
+
+.hover-scale{
+
+    transition:all .35s ease;
+
+}
+
+.hover-scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================================================
+   GROW
+==========================================================*/
+
+.hover-grow{
+
+    transition:all .35s ease;
+
+}
+
+.hover-grow:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ==========================================================
+   SHRINK
+==========================================================*/
+
+.hover-shrink{
+
+    transition:all .35s ease;
+
+}
+
+.hover-shrink:hover{
+
+    transform:scale(.96);
+
+}
+
+
+/* ==========================================================
+   ROTATE
+==========================================================*/
+
+.hover-rotate{
+
+    transition:all .35s ease;
+
+}
+
+.hover-rotate:hover{
+
+    transform:rotate(3deg);
+
+}
+
+
+/* ==========================================================
+   TILT
+==========================================================*/
+
+.hover-tilt{
+
+    transition:.35s;
+
+}
+
+.hover-tilt:hover{
+
+    transform:rotate(-2deg);
+
+}
+
+
+/* ==========================================================
+   SHADOW
+==========================================================*/
+
+.hover-shadow{
+
+    transition:.35s;
+
+}
+
+.hover-shadow:hover{
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+/* ==========================================================
+   GLOW
+==========================================================*/
+
+.hover-glow{
+
+    transition:.35s;
+
+}
+
+.hover-glow:hover{
+
+    box-shadow:
+
+    0 0 20px rgba(37,99,235,.30),
+
+    0 0 40px rgba(37,99,235,.18);
+
+}
+
+
+/* ==========================================================
+   BORDER
+==========================================================*/
+
+.hover-border{
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+}
+
+.hover-border:hover{
+
+    border-color:#2563EB;
+
+}
+
+
+/* ==========================================================
+   UNDERLINE
+==========================================================*/
+
+.hover-underline{
+
+    position:relative;
+
+}
+
+.hover-underline::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-4px;
+
+    width:0;
+
+    height:2px;
+
+    background:#2563EB;
+
+    transition:.35s;
+
+}
+
+.hover-underline:hover::after{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   OPACITY
+==========================================================*/
+
+.hover-opacity{
+
+    transition:.35s;
+
+}
+
+.hover-opacity:hover{
+
+    opacity:.8;
+
+}
+
+
+/* ==========================================================
+   BRIGHTNESS
+==========================================================*/
+
+.hover-bright{
+
+    transition:.35s;
+
+}
+
+.hover-bright:hover{
+
+    filter:brightness(110%);
+
+}
+
+
+/* ==========================================================
+   DARKEN
+==========================================================*/
+
+.hover-dark{
+
+    transition:.35s;
+
+}
+
+.hover-dark:hover{
+
+    filter:brightness(90%);
+
+}
+
+
+/* ==========================================================
+   IMAGE ZOOM
+==========================================================*/
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img{
+
+    transition:.5s;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.12);
+
+}
+
+
+/* ==========================================================
+   CARD
+==========================================================*/
+
+.card-hover{
+
+    transition:.35s ease;
+
+}
+
+.card-hover:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+
+/* ==========================================================
+   GLASS CARD
+==========================================================*/
+
+.glass-hover{
+
+    transition:.35s;
+
+}
+
+.glass-hover:hover{
+
+    backdrop-filter:blur(28px);
+
+}
+
+
+/* ==========================================================
+   BUTTON
+==========================================================*/
+
+.button-hover{
+
+    transition:.35s;
+
+}
+
+.button-hover:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ==========================================================
+   ICON
+==========================================================*/
+
+.icon-hover{
+
+    transition:.35s;
+
+}
+
+.icon-hover:hover{
+
+    transform:scale(1.2);
+
+}
+
+
+/* ==========================================================
+   BADGE
+==========================================================*/
+
+.badge-hover{
+
+    transition:.35s;
+
+}
+
+.badge-hover:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   TABLE ROW
+==========================================================*/
+
+.table-row-hover{
+
+    transition:.35s;
+
+}
+
+.table-row-hover:hover{
+
+    background:#F8FAFC;
+
+}
+
+
+/* ==========================================================
+   SIDEBAR ITEM
+==========================================================*/
+
+.sidebar-hover{
+
+    transition:.35s;
+
+}
+
+.sidebar-hover:hover{
+
+    padding-left:10px;
+
+}
+
+
+/* ==========================================================
+   NAV ITEM
+==========================================================*/
+
+.nav-hover{
+
+    transition:.35s;
+
+}
+
+.nav-hover:hover{
+
+    color:#2563EB;
+
+}
+
+
+/* ==========================================================
+   INPUT
+==========================================================*/
+
+.input-hover{
+
+    transition:.35s;
+
+}
+
+.input-hover:hover{
+
+    border-color:#2563EB;
+
+}
+
+
+/* ==========================================================
+   CHART
+==========================================================*/
+
+.chart-hover{
+
+    transition:.35s;
+
+}
+
+.chart-hover:hover{
+
+    transform:scale(1.02);
+
+}
+
+
+/* ==========================================================
+   METRIC
+==========================================================*/
+
+.metric-hover{
+
+    transition:.35s;
+
+}
+
+.metric-hover:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==========================================================
+   HERO
+==========================================================*/
+
+.hero-hover{
+
+    transition:.35s;
+
+}
+
+.hero-hover:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+/* ==========================================================
+   MODAL
+==========================================================*/
+
+.modal-hover{
+
+    transition:.35s;
+
+}
+
+.modal-hover:hover{
+
+    transform:scale(1.01);
+
+}
+
+
+/* ==========================================================
+   FOOTER LINK
+==========================================================*/
+
+.footer-link-hover{
+
+    transition:.35s;
+
+}
+
+.footer-link-hover:hover{
+
+    color:#3B82F6;
+
+}
+
+
+/* ==========================================================
+   PROGRESS
+==========================================================*/
+
+.progress-hover{
+
+    transition:.35s;
+
+}
+
+.progress-hover:hover{
+
+    filter:brightness(110%);
+
+}
+
+
+/* ==========================================================
+   SHAKE
+==========================================================*/
+
+.hover-shake:hover{
+
+    animation:hoverShake .45s;
+
+}
+
+@keyframes hoverShake{
+
+0%{transform:translateX(0);}
+
+25%{transform:translateX(-4px);}
+
+50%{transform:translateX(4px);}
+
+75%{transform:translateX(-4px);}
+
+100%{transform:translateX(0);}
+
+}
+
+
+/* ==========================================================
+   WOBBLE
+==========================================================*/
+
+.hover-wobble:hover{
+
+    animation:hoverWobble .6s;
+
+}
+
+@keyframes hoverWobble{
+
+0%{transform:rotate(0);}
+
+20%{transform:rotate(-3deg);}
+
+40%{transform:rotate(3deg);}
+
+60%{transform:rotate(-2deg);}
+
+80%{transform:rotate(2deg);}
+
+100%{transform:rotate(0);}
+
+}
+
+
+/* ==========================================================
+   FLOAT
+==========================================================*/
+
+.hover-float:hover{
+
+    animation:hoverFloat 1.5s infinite;
+
+}
+
+@keyframes hoverFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-6px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:768px){
+
+.hover-lift:hover,
+.hover-scale:hover,
+.card-hover:hover,
+.metric-hover:hover{
+
+transform:none;
+
+}
+
+}

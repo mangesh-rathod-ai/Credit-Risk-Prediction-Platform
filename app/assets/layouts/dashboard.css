@@ -1,0 +1,411 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   dashboard.css
+   ----------------------------------------------------------
+   Shared Dashboard Layout
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   DASHBOARD WRAPPER
+==========================================================*/
+
+.dashboard-wrapper{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    padding:20px;
+}
+
+
+/* ==========================================================
+   PAGE CONTAINER
+==========================================================*/
+
+.page-container{
+    width:100%;
+    max-width:1500px;
+    margin:auto;
+}
+
+
+/* ==========================================================
+   CONTENT WRAPPER
+==========================================================*/
+
+.content-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   SECTION WRAPPER
+==========================================================*/
+
+.dashboard-section{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   DASHBOARD HEADER
+==========================================================*/
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+
+/* ==========================================================
+   DASHBOARD FOOTER
+==========================================================*/
+
+.dashboard-footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+
+/* ==========================================================
+   AUTO GRID
+==========================================================*/
+
+.auto-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+
+/* ==========================================================
+   TWO COLUMN GRID
+==========================================================*/
+
+.two-column{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   TWO EQUAL COLUMN GRID
+==========================================================*/
+
+.two-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   THREE COLUMN GRID
+==========================================================*/
+
+.three-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   FOUR COLUMN GRID
+==========================================================*/
+
+.four-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   KPI GRID
+==========================================================*/
+
+.kpi-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FEATURE GRID
+==========================================================*/
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+
+/* ==========================================================
+   ANALYTICS GRID
+==========================================================*/
+
+.analytics-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   CHART GRID
+==========================================================*/
+
+.chart-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+
+/* ==========================================================
+   PREDICTION LAYOUT
+==========================================================*/
+
+.prediction-layout{
+    display:grid;
+    grid-template-columns:1.4fr .8fr;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   APPLICANT LAYOUT
+==========================================================*/
+
+.applicant-layout{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   SUMMARY GRID
+==========================================================*/
+
+.summary-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+
+/* ==========================================================
+   FLOATING DASHBOARD
+==========================================================*/
+
+.floating-dashboard{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+/* ==========================================================
+   GLASS DASHBOARD
+==========================================================*/
+
+.glass-dashboard{
+    backdrop-filter:blur(18px);
+    border-radius:20px;
+    padding:25px;
+}
+
+
+/* ==========================================================
+   STICKY PANEL
+==========================================================*/
+
+.sticky-panel{
+    position:sticky;
+    top:20px;
+}
+
+
+/* ==========================================================
+   SIDEBAR GAP
+==========================================================*/
+
+.sidebar-gap{
+    margin-left:8px;
+}
+
+
+/* ==========================================================
+   WIDGET ROW
+==========================================================*/
+
+.widget-row{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+/* ==========================================================
+   CENTER CONTENT
+==========================================================*/
+
+.center-layout{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   SPACE BETWEEN
+==========================================================*/
+
+.space-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   ALIGN START
+==========================================================*/
+
+.align-start{
+    display:flex;
+    align-items:flex-start;
+}
+
+
+/* ==========================================================
+   ALIGN CENTER
+==========================================================*/
+
+.align-center{
+    display:flex;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   FULL WIDTH
+==========================================================*/
+
+.full-width{
+    width:100%;
+}
+
+
+/* ==========================================================
+   HALF WIDTH
+==========================================================*/
+
+.half-width{
+    width:50%;
+}
+
+
+/* ==========================================================
+   CARD SPACING
+==========================================================*/
+
+.card-spacing{
+    margin-bottom:20px;
+}
+
+
+/* ==========================================================
+   SECTION SPACING
+==========================================================*/
+
+.section-spacing{
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+
+/* ==========================================================
+   DASHBOARD BODY
+==========================================================*/
+
+.dashboard-body{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+
+/* ==========================================================
+   DASHBOARD TITLE ROW
+==========================================================*/
+
+.dashboard-title-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:1200px){
+
+.kpi-grid,
+.four-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.analytics-grid,
+.prediction-layout,
+.two-column{
+grid-template-columns:1fr;
+}
+
+}
+
+
+@media(max-width:768px){
+
+.kpi-grid,
+.four-grid,
+.three-grid,
+.chart-grid,
+.summary-grid,
+.applicant-layout,
+.two-grid{
+grid-template-columns:1fr;
+}
+
+.dashboard-header,
+.dashboard-title-row{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.widget-row{
+flex-direction:column;
+}
+
+.dashboard-wrapper{
+padding:15px;
+}
+
+}

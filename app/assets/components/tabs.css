@@ -1,0 +1,435 @@
+/* ==========================================================
+   CREDIT RISK PREDICTION DASHBOARD
+   TABS COMPONENT
+   tabs.css
+   Version : 2.0
+==========================================================*/
+
+
+/* ==========================================================
+   TAB CONTAINER
+==========================================================*/
+
+.tabs-container{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+/* ==========================================================
+   TAB HEADER
+==========================================================*/
+
+.tabs{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:10px;
+
+    background:#F8FAFC;
+
+    border-radius:18px;
+
+    overflow-x:auto;
+
+}
+
+
+/* ==========================================================
+   TAB BUTTON
+==========================================================*/
+
+.tab{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 24px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    color:#475569;
+
+}
+
+
+/* ==========================================================
+   TAB HOVER
+==========================================================*/
+
+.tab:hover{
+
+    background:#E2E8F0;
+
+}
+
+
+/* ==========================================================
+   ACTIVE TAB
+==========================================================*/
+
+.tab-active{
+
+    background:#2563EB;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+}
+
+
+/* ==========================================================
+   TAB ICON
+==========================================================*/
+
+.tab-icon{
+
+    font-size:18px;
+
+}
+
+
+/* ==========================================================
+   TAB TEXT
+==========================================================*/
+
+.tab-text{
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   TAB BADGE
+==========================================================*/
+
+.tab-badge{
+
+    margin-left:8px;
+
+    padding:4px 10px;
+
+    border-radius:999px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:11px;
+
+}
+
+
+/* ==========================================================
+   TAB CONTENT
+==========================================================*/
+
+.tab-content{
+
+    width:100%;
+
+    min-height:400px;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:20px;
+
+}
+
+
+/* ==========================================================
+   TAB PANEL
+==========================================================*/
+
+.tab-panel{
+
+    display:none;
+
+}
+
+
+/* ==========================================================
+   ACTIVE PANEL
+==========================================================*/
+
+.tab-panel-active{
+
+    display:block;
+
+}
+
+
+/* ==========================================================
+   VERTICAL TABS
+==========================================================*/
+
+.tabs-vertical{
+
+    display:grid;
+
+    grid-template-columns:250px 1fr;
+
+    gap:25px;
+
+}
+
+
+/* ==========================================================
+   VERTICAL MENU
+==========================================================*/
+
+.vertical-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+/* ==========================================================
+   VERTICAL TAB
+==========================================================*/
+
+.vertical-tab{
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   VERTICAL ACTIVE
+==========================================================*/
+
+.vertical-active{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   UNDERLINE STYLE
+==========================================================*/
+
+.tab-underline{
+
+    position:relative;
+
+}
+
+.tab-underline::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-10px;
+
+    left:0;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:#2563EB;
+
+    transition:.35s;
+
+}
+
+.tab-underline:hover::after{
+
+    width:100%;
+
+}
+
+.tab-active.tab-underline::after{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   PILLS STYLE
+==========================================================*/
+
+.tab-pill{
+
+    border-radius:999px;
+
+}
+
+
+/* ==========================================================
+   GLASS TAB
+==========================================================*/
+
+.tab-glass{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.20);
+
+}
+
+
+/* ==========================================================
+   ICON ONLY
+==========================================================*/
+
+.tab-icon-only{
+
+    width:52px;
+
+    height:52px;
+
+    padding:0;
+
+    border-radius:50%;
+
+}
+
+
+/* ==========================================================
+   TAB FOOTER
+==========================================================*/
+
+.tab-footer{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+
+/* ==========================================================
+   ANIMATION
+==========================================================*/
+
+.tab-fade{
+
+    animation:tabFade .4s ease;
+
+}
+
+@keyframes tabFade{
+
+0%{
+
+opacity:0;
+
+transform:translateY(10px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+@media(max-width:992px){
+
+.tabs-vertical{
+
+grid-template-columns:1fr;
+
+}
+
+.vertical-menu{
+
+flex-direction:row;
+
+overflow-x:auto;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.tabs{
+
+flex-wrap:nowrap;
+
+overflow-x:auto;
+
+}
+
+.tab{
+
+padding:12px 18px;
+
+font-size:14px;
+
+}
+
+.tab-content{
+
+padding:18px;
+
+}
+
+}
