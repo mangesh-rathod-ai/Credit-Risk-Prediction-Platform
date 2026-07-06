@@ -11,9 +11,19 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Ignore datasets
-data/
+# Ignore all datasets by default
+data/**
+
+# Allow only the deployment dataset
+!data/
+!data/processed/
+!data/processed/deployment_data.csv
+
+# Ignore all other CSV files
 *.csv
+
+# But keep the deployment CSV
+!data/processed/deployment_data.csv
 
 # Ignore large models
 models/random_forest.pkl
