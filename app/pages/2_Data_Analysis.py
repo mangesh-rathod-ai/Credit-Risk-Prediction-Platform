@@ -2,21 +2,12 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from pathlib import Path
-
-from pathlib import Path
 import json
 from streamlit_lottie import st_lottie
 
-animation_path = Path("app/assets/animations/analytics/counter.json")
-
-with open(animation_path, "r") as f:
-    counter_animation = json.load(f)
-
-st_lottie(counter_animation, height=250, key="counter")
-
-
-
-
+# ==========================
+# Page Configuration
+# ==========================
 
 st.set_page_config(
     page_title="Data Analysis",
@@ -24,30 +15,47 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📊 Exploratory Data Analysis")
+# ==========================
+# Lottie Animation
+# ==========================
 
+animation_path = Path("app/assets/animations/analytics/counter.json")
+
+if animation_path.exists():
+    with open(animation_path, "r") as f:
+        counter_animation = json.load(f)
+
+    st_lottie(counter_animation, height=250, key="counter")
+
+# ==========================
+# Title
+# ==========================
+
+st.title("📊 Exploratory Data Analysis")
 st.markdown("---")
 
+# ==========================
+# Dataset Path
+# ==========================
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+DATA_PATH = BASE_DIR / "data" / "processed" / "deployment_dataset.csv"
+
+# ==========================
 # Load Dataset
-from pathlib import Path
-
-# Project root folder
-BASE_DIR = Path(__file__).resolve().parents[2]
-
-# Dataset path
-from pathlib import Path
-
-# Project root folder
-BASE_DIR = Path(__file__).resolve().parents[2]
-
-# Dataset path
-DATA_PATH = BASE_DIR / "data" / "processed" / "application_train_feature_engineered.csv"
+# ==========================
 
 @st.cache_data
 def load_data():
     return pd.read_csv(DATA_PATH)
 
-df = load_data()
+try:
+    df = load_data()
+
+except FileNotFoundError:
+    st.error(f"Dataset not found:\n\n{DATA_PATH}")
+    st.stop()
 
 # ==========================
 # Dataset Overview
@@ -60,7 +68,7 @@ col1, col2, col3, col4 = st.columns(4)
 col1.metric("Rows", f"{df.shape[0]:,}")
 col2.metric("Columns", df.shape[1])
 col3.metric("Missing Values", int(df.isna().sum().sum()))
-col4.metric("Duplicate Rows", df.duplicated().sum())
+col4.metric("Duplicate Rows", int(df.duplicated().sum()))
 
 st.markdown("---")
 
@@ -70,7 +78,7 @@ st.markdown("---")
 
 st.subheader("📋 Dataset Preview")
 
-st.dataframe(df.head())
+st.dataframe(df.head(), use_container_width=True)
 
 st.markdown("---")
 
@@ -78,28 +86,29 @@ st.markdown("---")
 # Target Distribution
 # ==========================
 
-st.subheader("🎯 Target Distribution")
+if "TARGET" in df.columns:
 
-target = df["TARGET"].value_counts().reset_index()
-target.columns = ["Target", "Count"]
+    st.subheader("🎯 Target Distribution")
 
-target["Target"] = target["Target"].map({
-    0: "Non-Default",
-    1: "Default"
-})
+    target = df["TARGET"].value_counts().reset_index()
+    target.columns = ["Target", "Count"]
 
-fig = px.pie(
-    target,
-    names="Target",
-    values="Count",
-    hole=0.5,
-    color="Target",
-    title="Loan Default Distribution"
-)
+    target["Target"] = target["Target"].replace({
+        0: "Non-Default",
+        1: "Default"
+    })
 
-st.plotly_chart(fig, use_container_width=True)
+    fig = px.pie(
+        target,
+        names="Target",
+        values="Count",
+        hole=0.5,
+        title="Loan Default Distribution"
+    )
 
-st.markdown("---")
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown("---")
 
 # ==========================
 # Missing Values
@@ -108,47 +117,73 @@ st.markdown("---")
 st.subheader("📉 Top Missing Features")
 
 missing = (
-    df.isna().sum()
+    df.isna()
+      .sum()
       .sort_values(ascending=False)
-      .head(20)
 )
 
-missing = missing[missing > 0]
+missing = missing[missing > 0].head(20)
 
-if len(missing) > 0:
+if len(missing):
 
     fig = px.bar(
-        missing,
+        x=missing.values,
+        y=missing.index,
         orientation="h",
-        title="Top Missing Features"
+        labels={
+            "x": "Missing Values",
+            "y": "Feature"
+        },
+        title="Top 20 Missing Features"
     )
 
     st.plotly_chart(fig, use_container_width=True)
 
 else:
 
-    st.success("✅ No Missing Values Found!")
+    st.success("✅ No Missing Values Found")
 
 st.markdown("---")
 
 # ==========================
-# Numerical Feature
+# Feature Distribution
 # ==========================
-
-st.subheader("📈 Feature Distribution")
 
 numeric_cols = df.select_dtypes(include="number").columns.tolist()
 
-feature = st.selectbox(
-    "Select Numerical Feature",
-    numeric_cols
-)
+if len(numeric_cols):
 
-fig = px.histogram(
-    df,
-    x=feature,
-    nbins=40,
-    title=f"{feature} Distribution"
+    st.subheader("📈 Feature Distribution")
+
+    feature = st.selectbox(
+        "Select Numerical Feature",
+        numeric_cols
+    )
+
+    fig = px.histogram(
+        df,
+        x=feature,
+        nbins=40,
+        title=f"{feature} Distribution"
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+st.markdown("---")
+
+# ==========================
+# Correlation Heatmap
+# ==========================
+
+st.subheader("🔥 Correlation Heatmap")
+
+corr = df.select_dtypes(include="number").corr()
+
+fig = px.imshow(
+    corr,
+    aspect="auto",
+    color_continuous_scale="RdBu_r",
+    title="Correlation Matrix"
 )
 
 st.plotly_chart(fig, use_container_width=True)
@@ -161,6 +196,22 @@ st.markdown("---")
 
 st.subheader("📋 Summary Statistics")
 
-st.dataframe(df.describe())
+st.dataframe(df.describe(), use_container_width=True)
 
-from streamlit_lottie import st_lottie
+st.markdown("---")
+
+# ==========================
+# Dataset Information
+# ==========================
+
+st.subheader("📄 Dataset Information")
+
+info_df = pd.DataFrame({
+    "Column": df.columns,
+    "Data Type": df.dtypes.astype(str),
+    "Missing Values": df.isna().sum().values
+})
+
+st.dataframe(info_df, use_container_width=True)
+
+st.success("✅ Data Analysis Loaded Successfully")
