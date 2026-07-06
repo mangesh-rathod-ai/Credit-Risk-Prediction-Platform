@@ -19,13 +19,13 @@ st.set_page_config(
 # Lottie Animation
 # ==========================
 
-animation_path = Path("app/assets/animations/analytics/counter.json")
+'''animation_path = Path("app/assets/animations/analytics/counter.json")
 
 if animation_path.exists():
     with open(animation_path, "r") as f:
         counter_animation = json.load(f)
 
-    st_lottie(counter_animation, height=250, key="counter")
+    st_lottie(counter_animation, height=250, key="counter")'''
 
 # ==========================
 # Title
