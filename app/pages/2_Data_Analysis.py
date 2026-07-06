@@ -162,3 +162,5 @@ st.markdown("---")
 st.subheader("📋 Summary Statistics")
 
 st.dataframe(df.describe())
+
+from streamlit_lottie import st_lottie
